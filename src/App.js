@@ -1,14 +1,15 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react'
+import Student from './Student'
 
-class App extends Component {
-	render() {
-		return (
-			<Fragment>
-				<h1>This is Test</h1>
-				<h2>Hello World</h2>
-			</Fragment>
-		);
-	}
+const App = () => {
+	return (
+		<Fragment>
+			<Student name='Diwakar'></Student>
+			<Student name='Harry'></Student>
+			<Student name='Neelam'></Student>
+			<Student name='Tatti'></Student>
+		</Fragment>
+	)
 }
 
-export default App;
+export default App
