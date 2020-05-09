@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "onWindowChange",
+    "prettier.semi": false,
+    "prettier.trailingComma": "all",
+    "prettier.alignObjectProperties": true,
+    "prettier.arrayExpand": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.spaceBeforeFunctionParen": true,
+    "prettier.arrowParens": "always"
+}
