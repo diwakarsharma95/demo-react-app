@@ -1,53 +1,35 @@
 import React, { Component, Fragment } from 'react'
-import pt from 'prop-types'
 
-// const Student = (props) => {
-// 	return (
-// 		<h1>
-// 			Hello {props.name}. {props.children}
-// 		</h1>
-// 	)
-// }
 
-// class Student extends Component {
-// 	state = {
-// 		name: "Neelam",
-// 		rollno: 105
+//Using Class
+// class Student extends Component{
+// 	handleClick = () => {
+// 		console.log("Button Clicked",this)
 // 	}
-// 	render() {
-// 	return (
-// 		<Fragment>
-// 			<h1>Name from props: {this.props.name}</h1>
-// 			<h1>Name from state: {this.state.name}</h1>
-// 			<h1>Props children property: {this.props.children}</h1>
-// 			<h1>Roll No. from props: {this.props.rollno}</h1>
-// 			<h1>Roll No. from state: {this.state.rollno}</h1>
-// 		</Fragment>
-// 	)	
+// 	render(){
+// 		return(
+// 			<Fragment>
+// 				<h1>Hello Event</h1>
+// 				<button onClick={this.handleClick}>Click Me</button>
+// 			</Fragment>
+// 		)
 // 	}
 // }
 
+//Using function
+const handleClick = (e) => {
+	e.preventDefault(e)
+	console.log("Clicked")
+}
 
-// setting state using constructor
-class Student extends Component {
-	constructor(props){
-		super(props)
-		this.state = {
-			name: "Neelam",
-			rollno: 105
-		}
-	}
-	render(){
-	return (
-		<Fragment>
-			<h1>Name from props: {this.props.name}</h1>
-			<h1>Name from state: {this.state.name}</h1>
-			<h1>Props children property: {this.props.children}</h1>
-			<h1>Roll No. from props: {this.props.rollno}</h1>
-			<h1>Roll No. from state: {this.state.rollno}</h1>
-		</Fragment>
-	)	
-	}
+const Student = () => {
+	return(
+		<Fragment>				
+			<h1>Hello Event</h1>
+ 			<button onClick={handleClick}>Click Me</button>
+			 <a href="https://github.com/diwakarsharma95" onClick={handleClick}>Click Me</a>
+ 		</Fragment>
+	)
 }
 
 export default Student
