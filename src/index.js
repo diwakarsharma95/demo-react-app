@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Student from './Student'
-import App from './App'
+import el from './App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+//Render Element
+ReactDOM.render(<Student></Student>, document.getElementById('root'))

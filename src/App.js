@@ -1,15 +1,7 @@
 import React, { Fragment } from 'react'
 import Student from './Student'
+import './App.css'
 
-const App = () => {
-	return (
-		<Fragment>
-			<Student name='Diwakar'></Student>
-			<Student name='Harry'></Student>
-			<Student name='Neelam'></Student>
-			<Student name='Tatti'></Student>
-		</Fragment>
-	)
-}
+const el = <h1 className='bg'>Hello</h1>
 
-export default App
+export default el
