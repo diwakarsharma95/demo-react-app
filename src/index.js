@@ -4,4 +4,4 @@ import Student from './Student'
 import el from './App'
 
 //Render Element
-ReactDOM.render(<Student name='Diwakar'>I am Child</Student>, document.getElementById('root'))
+ReactDOM.render(<Student name='Diwakar' rollno={102}>I am Child</Student>, document.getElementById('root'))
