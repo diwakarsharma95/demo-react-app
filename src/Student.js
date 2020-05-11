@@ -1,31 +1,27 @@
 import React, { Component, Fragment } from 'react'
 
-
-
-
-class Student extends Component{
+class Student extends Component {
 	state = {
-		name: "John"
+		id: 1,
+		name: 'John',
 	}
-	// handleClick = (e) => {
-	// 	this.setState((state,props) => {
-	// 		console.log(state)
-	// 		console.log(props)
-	// 		state.name = "Neelam"
-	// 	})
-	// }
-	handleClick = (e) => {
+	handleClick = (id) => {
 		this.setState({
-			name: "Neelam"
+			name: 'Neelam',
 		})
+		console.log(id)
 	}
-	render(){
-		return(
-			<Fragment>				
+	handleClickArg = () => this.handleClick(this.state.id)
+	render() {
+		return (
+			<Fragment>
 				<h1>Hello {this.state.name}</h1>
-				 <button onClick={this.handleClick}>Click Me</button>
-				 <a href="https://github.com/diwakarsharma95" onClick={this.handleClick}>Click Me</a>
-			 </Fragment>
+				<h1>Id: {this.state.id}</h1>
+				<button onClick={this.handleClickArg}>Click Me</button>
+				<a href='https://github.com/diwakarsharma95' onClick={this.handleClick}>
+					Click Me
+				</a>
+			</Fragment>
 		)
 	}
 }
